@@ -12,8 +12,7 @@
                     <mat-icon>play_arrow</mat-icon>
                 </button>
             </div>
-            <audio autoplay>
-                <source src="assets/audio/{{pokemon?.id}}.mp3" type="audio/mp3">
+            <audio src="assets/audio/{{pokemon?.id}}.mp3" type="audio/mp3" autoplay>
             </audio>
             <mat-chip-list aria-label="Pokemon types">
                 <mat-chip *ngFor="let type of pokemon?.types">{{type}}</mat-chip>
