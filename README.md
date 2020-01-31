@@ -1,4 +1,10 @@
-# Pokedexnew
+# pokedeXdeuzy
+
+![alt text](https://github.com/aymanous/pokedexdeuzy/blob/master/src/assets/img/screenshots/login.png)
+![alt text](https://github.com/aymanous/pokedexdeuzy/blob/master/src/assets/img/screenshots/pokedex.png)
+![alt text](https://github.com/aymanous/pokedexdeuzy/blob/master/src/assets/img/screenshots/myteam.png)
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
 
