@@ -1,12 +1,12 @@
 # pokedeXdeuzy
 
-Login page:
+## Login page:
 ![alt text](https://github.com/aymanous/pokedexdeuzy/blob/master/src/assets/img/screenshots/login.png)
 
-Pokedex page:
+## Pokedex page:
 ![alt text](https://github.com/aymanous/pokedexdeuzy/blob/master/src/assets/img/screenshots/pokedex.png)
 
-My team page:
+## My team page:
 ![alt text](https://github.com/aymanous/pokedexdeuzy/blob/master/src/assets/img/screenshots/myteam.png)
 
 
