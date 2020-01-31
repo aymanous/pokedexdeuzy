@@ -1,0 +1,7 @@
+
+<div class="container">
+    <app-main-menu *ngIf="this.authentication.checkUserSession()"></app-main-menu>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+</div>

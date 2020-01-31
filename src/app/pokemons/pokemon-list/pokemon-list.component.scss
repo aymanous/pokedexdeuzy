@@ -1,0 +1,29 @@
+
+mat-nav-list {
+    background: #303030;
+    width: fit-content;
+    border: solid 1px #515151;
+
+    height: 100%;
+    overflow: auto;
+
+    a {
+        text-decoration: none;
+    }
+
+    :hover {
+        background: #000;
+    }
+}
+
+::ng-deep .mat-list-base {
+    padding-top: 0 !important;
+}
+
+.example-form-field {
+    width: 200px;
+}
+
+.mat-input-element, mat-icon{
+    color: #ffffff;
+}

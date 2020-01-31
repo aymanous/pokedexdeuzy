@@ -1,0 +1,47 @@
+<mat-drawer-container>
+    <mat-drawer mode="side" opened>
+        <ng-container *ngIf="!(myTeamPokemons?.length >= 6)">
+            <h3>Ajouter un pokemon</h3>
+            <p>Vous pouvez ajouter un pokemon à votre équipe directement à travers son id ou son nom.</p>
+            <mat-form-field>
+                <input matInput type="text" placeholder="Recherche (Id/Nom)" [(ngModel)]="searchValue" (keyup)="searchPokemon()">
+                <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+                    <mat-icon (click)="value=''; searchPokemon()">close</mat-icon>
+                </button>
+            </mat-form-field>
+            <mat-nav-list>
+                <mat-list-item *ngFor="let pokemon of searchResultsPokemons" (click)="addPokemon(pokemon.id)">
+                    <img matListAvatar src="assets/img/sprites/{{pokemon.id}}.png" alt="{{pokemon.id}}">
+                    <p matLine>
+                        <span>{{ pokemon.id }}. {{ pokemon.name}}</span>
+                    </p>
+                    <mat-icon>add</mat-icon>
+                </mat-list-item>
+            </mat-nav-list>
+        </ng-container>
+        <ng-container *ngIf="myTeamPokemons?.length == 6">
+            <h3>Ton équipe <br>est au complet !</h3>
+            <p>Si tu souhaite en y ajouter un pokémon, sacrifies-en un d'abord !</p>
+            <p>Eh oui, on ne peut pas tout avoir dans la vie...</p>
+        </ng-container>
+    </mat-drawer>
+    <mat-drawer-content>
+        <div class="list">
+            <mat-card *ngFor="let pokemon of myTeamPokemons">
+                <mat-card-header>
+                    <img mat-card-image src="assets/img/official-artwork/{{pokemon?.id}}.png">
+                    <mat-card-title>{{pokemon.name}}</mat-card-title>
+                    <mat-card-subtitle>Pokemon n°{{pokemon.id}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>
+                    {{pokemon.description}}
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button class="supprimer" (click)="delete(pokemon.id)" mat-button>Supprimer</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>

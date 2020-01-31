@@ -1,0 +1,47 @@
+mat-card {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.avatar {
+    text-align: center;
+
+    img {
+        width: 150px;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.name-play {
+    display: flex;
+
+    p {
+        margin-right: 15px;
+    }
+
+    button {
+        border: solid 2px #ffffff;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 13px;
+
+        mat-icon {
+            font-size: 16px;
+            width: 17px;
+            height: fit-content;
+            line-height: 0px;
+            margin-top: -3px;
+        }
+    }
+}
+
+.play-icon {
+    line-height: unset;
+}
+
+::ng-deep .mat-grid-tile .mat-figure {
+    display: block !important;
+}

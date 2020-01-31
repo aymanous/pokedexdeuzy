@@ -1,0 +1,31 @@
+.container{
+    background: #385344;
+    display: flex;
+
+    a {
+        color: white;
+        text-decoration: none;
+        border-right: solid 1px #385d4a;
+        padding: 10px;  
+    }
+
+    a:hover {
+        background: #46745d;
+    }
+}
+
+.menu {
+    display: flex;
+    margin-left: 15px;
+    place-items: flex-start;
+    padding: 5px;
+}
+
+.logo {
+    font-weight: bold;
+    color: #385344;
+    background: #FFF;
+    padding: 10px;
+    font-size: 1.5rem;
+    box-shadow: 0px 0px 10px 2px #25382e;
+}
